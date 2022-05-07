@@ -7,10 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   readonly name: string = 'Andrey';
-  readonly imgURL: string =
-    'https://i.pinimg.com/originals/10/11/c6/1011c6f3ffcdfa8c2f3f57a78d35fe1f.jpg';
+  imgURL: string = 'https://picsum.photos/id/237/400/400';
 
   getName(): string {
     return this.name;
+  }
+
+  changeImage(e: KeyboardEvent) {
+    this.imgURL = (e.target as HTMLInputElement).value;
   }
 }
