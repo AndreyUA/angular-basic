@@ -6,11 +6,15 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./post.component.scss'],
 })
 export class PostComponent implements OnInit {
-  constructor() {}
+  constructor() {
+    console.log('this is constructor ', this.postImg);
+  }
 
   @Input('img') postImg: string = '';
 
   @Output() imgSelected = new EventEmitter<string>();
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    console.log('this is ngOnInit ', this.postImg);
+  }
 }
