@@ -9,6 +9,8 @@ export class AppComponent {
   readonly name: string = 'andrey zhygarev';
   imgURL: string = 'https://picsum.photos/id/237/400/400';
   currentDate: Date = new Date();
+  cost: number = 2_000;
+  temperature: number = 25.3;
 
   getName(): string {
     return this.name;
