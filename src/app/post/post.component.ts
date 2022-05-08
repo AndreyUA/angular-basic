@@ -8,7 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class PostComponent implements OnInit {
   constructor() {}
 
-  @Input() postImg: string = '';
+  @Input('img') postImg: string = '';
 
   ngOnInit(): void {}
 }
