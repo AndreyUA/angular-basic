@@ -11,6 +11,10 @@ export class AppComponent {
   currentDate: Date = new Date();
   cost: number = 2_000;
   temperature: number = 25.3;
+  pizza = {
+    toppings: ['pepperoni', 'cheeze', 'pepper'],
+    size: 'large',
+  };
 
   getName(): string {
     return this.name;
