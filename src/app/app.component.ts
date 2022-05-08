@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   readonly name: string = 'andrey zhygarev';
   imgURL: string = 'https://picsum.photos/id/237/400/400';
+  currentDate: Date = new Date();
 
   getName(): string {
     return this.name;
