@@ -15,6 +15,7 @@ export class AppComponent {
     toppings: ['pepperoni', 'cheeze', 'pepper'],
     size: 'large',
   };
+  blueClass: boolean = false;
 
   getName(): string {
     return this.name;
@@ -26,5 +27,9 @@ export class AppComponent {
 
   logImg(e: string) {
     console.log(e);
+  }
+
+  changeClass(): void {
+    this.blueClass = !this.blueClass;
   }
 }

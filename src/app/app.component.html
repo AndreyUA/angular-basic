@@ -1,3 +1,14 @@
+<button
+  [ngClass]="{
+    blue: blueClass
+  }"
+  (click)="changeClass()"
+>
+  Change
+</button>
+
+<hr />
+
 <input (keyup)="changeImage($event)" [value]="imgURL" />
 
 <app-post [img]="imgURL" (imgSelected)="logImg($event)">
