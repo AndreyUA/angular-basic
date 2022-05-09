@@ -1,3 +1,9 @@
+<ng-template [ngIf]="blueClass">
+  <p>button is blue. (full way with [ngIf])</p>
+</ng-template>
+
+<p *ngIf="blueClass">button is blue. (short way with *ngIf)</p>
+
 <button
   [ngClass]="{
     blue: blueClass
